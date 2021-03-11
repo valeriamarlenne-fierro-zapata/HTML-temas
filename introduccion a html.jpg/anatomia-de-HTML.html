@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>sitio web</title>
+    <link rel="stylesheet" href="stylessheet-sematica.css">
+</head>
+<body>
+    <h1 align="center">ANATOMIA DE HTML</h1>
+    <header>
+        <ul>
+           <li><a href="/como-trabaja-el-internet.html">COMO TRABAJA EL INTERNET</a></li>
+           <li><a href="/intoduccion-al-HTML.html">INTRODUCCION AL HTML</a></li>
+           <li><a href="/anatomia-de-HTML.html">ANATOMIA DE HTML</a></li>
+           <li><a href="/diseño-de-HTML.html">DISEÑO DEL HTML</a></li>
+        </ul>
+    </header>
+    <font color="red"><h1>Las partes principales de un elemento son </h1>
+    <font color="black"><h2>La etiqueta de apertura: consiste en el nombre del elemento (en este caso, p), encerrado por paréntesis angulares (< >) de apertura y cierre. Establece dónde comienza o empieza a tener efecto el elemento —en este caso, dónde es el comienzo del párrafo. </h2>
+    <font color="black"><h2>La etiqueta de cierre: es igual que la etiqueta de apertura, excepto que incluye una barra de cierre (/) antes del nombre de la etiqueta. Establece dónde termina el elemento en este caso dónde termina el párrafo. </h2>
+    <font color="black"><h2>El contenido: este es el contenido del elemento, que en este caso es sólo texto. </h2>
+    <font color="black"><h2>El elemento: la etiqueta de apertura, más la etiqueta de cierre, más el contenido equivale al elemento. </h2>
+    <img src="https://i0.wp.com/www.irinadelgado.com/wp-content/uploads/2020/04/etiquetas-y-atributos-hmtl-2.png?resize=677%2C381&ssl=1" width="400" height="300" align="center">
+    <font color="red"><h1>Atributos </h1>
+    <font color="black"><h2>Los atributos contienen información adicional acerca del elemento, la cual no quieres que aparezca en el contenido real del elemento. Aquí class es el nombre del atributo y editor-note el valor del atributo. En este caso, el atributo class permite darle al elemento un nombre identificativo, que se puede utilizar luego para apuntarle al elemento información de estilo y demás cosas. </h2>
+    <font color="blue"><h2>Un atributo debe tener siempre: </h2>
+    <font color="black"><h2>Un espacio entre este y el nombre del elemento (o del atributo previo, si el elemento ya posee uno o más atributos). </h2>
+    <font color="black"><h2>El nombre del atributo, seguido por un signo de igual (=). </h2>
+    <font color="black"><h2>Comillas de apertura y de cierre, encerrando el valor del atributo. </h2>
+    <font color="black"><h2>Los atributos siempre se incluyen en la etiqueta de apertura de un elemento, nunca en la de cierre. </h2>
+    <font color="blue"><h2>Nota: el atributo con valores simples que no contengan espacios en blanco ASCII (o cualesquiera de los caracteres " ' ` = < >) pueden permanecer sin entrecomillar, pero se recomienda entrecomillar todos los valores de atributo, ya que esto hace que el código sea más consistente y comprensible.</h2>
+    <font color="red"><h1>Anidar elementos</h1>
+    <font color="black"><h2>Puedes también colocar elementos dentro de otros elementos esto se llama anidamiento. Si, por ejemplo, quieres resaltar una palabra del texto (en el ejemplo la palabra «muy»), podemos encerrarla en un elemento <strong>, que significa que dicha palabra se debe enfatizar: </h2>    
+    <font color="black"><h2>Debes asegurarte que los elementos estén correctamente anidados</h2>        
+    <font color="black"><h2>Los elementos deben abrirse y cerrarse ordenadamente, de forma tal que se encuentren claramente dentro o fuera el uno del otro. Si estos se encuentran solapados, el navegador web tratará de adivinar lo que intentas decirle, pero puede que obtengas resultados inesperados. Así que, ¡no lo hagas!</h2>            
+    <font color="red"><h1>Elementos vacios </h1>                
+    <font color="black"><h2>Algunos elementos no poseen contenido, y son llamados elementos vacíos.Posee dos atributos, pero no hay etiqueta de cierre ni contenido encerrado. Esto es porque un elemento de imagen no encierra contenido al cual afectar. Su propósito es desplegar una imagen en la página HTML, en el lugar en que aparece. </h2>  
+    <font color="red"><h1>Anatomia de un documento</h1> 
+    <font color="black"><h2>Hasta ahora has visto lo básico de elementos HTML individuales, pero estos no son muy útiles por sí solos. Ahora verás cómo los elementos individuales son combinados para formar una página HTML entera. Vuelve a visitar el código de tu ejemplo en index.html (que viste por primera vez en el artículo Manejo de archivos): </h2>     
+    <font color="black"><h2>!DOCTYPE html el tipo de documento. Es un preámbulo requerido. Anteriormente, cuando HTML era joven (cerca de 1991/2), los tipos de documento actuaban como vínculos a un conjunto de reglas que el código HTML de la página debía seguir para ser considerado bueno, lo que podía significar la verificación automática de errores y algunas otras cosas de utilidad. Sin embargo, hoy día es simplemente un artefacto antiguo que a nadie le importa, pero que debe ser incluido para que todo funcione correctamente. Por ahora, eso es todo lo que necesitas saber. </h2>         
+    <font color="black"><h2>html-/html> — el elemento html. Este elemento encierra todo el contenido de la página entera y, a veces, se le conoce como el elemento raíz (root element). </h2> 
+    <font color="black"><h2>head-/head — el elemento head. Este elemento actúa como un contenedor de todo aquello que quieres incluir en la página HTML que no es contenido visible por los visitantes de la página. Incluye cosas como palabras clave (keywords), una descripción de la página que quieres que aparezca en resultados de búsquedas, código CSS para dar estilo al contenido, declaraciones del juego de caracteres, etc. </h2> 
+    <font color="black"><h2>meta charset="utf-8" meta. Este elemento establece el juego de caracteres que tu documento usará en utf-8, que incluye casi todos los caracteres de todos los idiomas humanos. Básicamente, puede manejar cualquier contenido de texto que puedas incluir. No hay razón para no establecerlo, y puede evitar problemas en el futuro. </h2> 
+    <font color="black"><h2>title-/title el elemento title establece el título de tu página, que es el título que aparece en la pestaña o en la barra de título del navegador cuando la página es cargada, y se usa para describir la página cuando es añadida a los marcadores o como favorita.</h2>  
+    <font color="black"><h2>body-/body el elemento body. Encierra todo el contenido que deseas mostrar a los usuarios web que visiten tu página, ya sea texto, imágenes, videos, juegos, pistas de audio reproducibles, y demás.</h2>                            
+</body>                
+</html>
